@@ -1,0 +1,69 @@
+<!-- Hero Section: Shopify HTML/CSS version -->
+<style>
+  .hero-wrapper {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .hero-wrapper {
+      grid-template-columns: 1fr 1fr;
+      padding: 6rem;
+    }
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-text p {
+    color: #9ca3af;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    max-width: 40rem;
+  }
+
+  .hero-btn {
+    background: white;
+    color: black;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5rem;
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+
+  .hero-btn:hover {
+    transform: scale(1.05);
+  }
+
+  .hero-img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+  }
+</style>
+
+<section class="hero-wrapper">
+  <div class="hero-text">
+    <h2>Where Streetwear Meets Soul</h2>
+    <p>Flavour isn't just a look — it's a movement. Designed for the bold,
+      built for community, and crafted for those who wear purpose.
+    </p>
+    <a href="/collections/all" class="hero-btn">Shop Community Picks</a>
+  </div>
+  <div>
+    <img
+      src="{{ 'phase-vibe-model.png' | asset_url }}"
+      alt="Model wearing vest"
+      class="hero-img"
+    />
+  </div>
+</section>
